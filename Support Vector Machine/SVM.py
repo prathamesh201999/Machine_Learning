@@ -39,6 +39,10 @@ plt.xlim(x2.min(), x2.max())
 for i,j in enumerate(np.unique(y_set)):
     plt.scatter(x_set[y_set == j,0],x_set[y_set ==j, 1],
                 c = ListedColormap(('red','green'))(i),label = j)
+    
+plt.title('Support Vector Machine')
+plt.xlabel('Age')
+plt.ylabel('Estimated Salary')
 plt.legend()
 plt.show()
 
